@@ -27,7 +27,6 @@ function App() {
         maxTemp: null,
         minTemp: null
     });
-    console.log(process.env.REACT_APP_API_KEY)
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${weatherData.search}&appid=${process.env.REACT_APP_API_KEY}&units=metric&lang=tr`;
     function changed(e){
         setWeatherData(prevState => ({
