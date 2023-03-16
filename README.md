@@ -1,4 +1,5 @@
 # React Weather App
+https://reactweatherappv1.netlify.app/
 
 Bu, **React Weather App** adlı bir hava durumu uygulamasıdır. Kullanıcının bir şehir adı girdiği zaman, uygulama o şehirdeki hava durumu verilerini çeker ve sıcaklık, hissedilen sıcaklık, ülke adı, şehir adı ve nüfus bilgilerini gösterir.
 
