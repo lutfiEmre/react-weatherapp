@@ -42,8 +42,8 @@ npm start
 
 **EN** The application uses the OpenWeatherMap API. You will need an API key to access the API. If you do not have an API key, you need to register [here](https://home.openweathermap.org/users/sign_up) and obtain one. After obtaining your API key, you can use it by pasting it into the api section in .env.
 
-     TR API anahtarınızı aldıktan sonra .env'in içerisinde api kısmına yapıştırarak api anahtarınızı kullanabilirsiniz
-     EN After obtaining your API key, you can use it by pasting it into the api section in .env.
+     TR weatherData State içerisindeki 'yourapi' kısmına api anahtarını yazabilirsin.
+     EN You can write your api in the 'yourapi' section of the weatherData State.
 
 ## Kullanılan API'ler // APIs Used 
 
