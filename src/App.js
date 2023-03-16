@@ -133,10 +133,10 @@ function App() {
                             <h1 id={'cityname'}>{weatherData.cityName ? weatherData.cityName : 'Loading'}</h1>
                             <div className={'weather-class-top'}><h3>{weatherData.description}</h3></div>
                             <div className={'weather-info'}>
-                                <div className={'weather-class'}><h2>Sıcaklık: {weatherData.temp}</h2></div>
-                                <div className={'weather-class-top'}><h2>Hissedilen Sıcaklık: {weatherData.feelsLike}</h2></div>
-                                <div className={'weather-class'}><h2>Max Per Sıcaklık: {weatherData.maxTemp}</h2></div>
-                                <div className={'weather-class-top'}><h2>Min Per Sıcaklık: {weatherData.minTemp}</h2></div></div>
+                                <div className={'weather-class'}><h2>Temp: {weatherData.temp}</h2></div>
+                                <div className={'weather-class-top'}><h2>Feels Like Temp {weatherData.feelsLike}</h2></div>
+                                <div className={'weather-class'}><h2>Max Per Temp: {weatherData.maxTemp}</h2></div>
+                                <div className={'weather-class-top'}><h2>Min Per Temp: {weatherData.minTemp}</h2></div></div>
                         </div>
                     </div>
                     <div className={'country-icon'}>
