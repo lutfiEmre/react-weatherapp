@@ -27,7 +27,7 @@ function App() {
         temp: '',
         citiesPop: '',
         countryCode: 'TR',
-        population: '84 Million',
+        population: '84000000',
         country: null,
         flag: null,
         feelsLike: null,
