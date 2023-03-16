@@ -10,6 +10,13 @@ function App() {
     const yourapi = ''
     const inputref = useRef()
     const barContent = useRef()
+    function changed(e){
+        setWeatherData(prevState => ({
+            ...prevState,
+            search: e.target.value.toLocaleLowerCase().trim()
+        }))
+        console.log(weatherData.search)
+    }
     const [weatherData, setWeatherData] = useState({
         data: null,
         isOpen: false,
@@ -25,16 +32,10 @@ function App() {
         flag: null,
         feelsLike: null,
         maxTemp: null,
-        minTemp: null
+        minTemp: null,
+        yourapi: 'writeyourapi'
     });
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${weatherData.search}&appid=${process.env.REACT_APP_API_KEY}&units=metric&lang=tr`;
-    function changed(e){
-        setWeatherData(prevState => ({
-            ...prevState,
-            search: e.target.value.toLocaleLowerCase().trim()
-        }))
-        console.log(weatherData.search)
-    }
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${weatherData.search}&appid=${weatherData.yourapi === 'writeyourapi' ? process.env.REACT_APP_API_KEY : weatherData.yourapi}&units=metric&lang=tr`;
     useEffect(() => {
       fetch(apiUrl)
           .then(response => response.json())
