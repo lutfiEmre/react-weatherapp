@@ -26,8 +26,7 @@ Uygulama açıldığında, bir ülke adı girmeniz gerekmektedir. Ülke adını 
 ## API Key
 Uygulama, OpenWeatherMap API'sini kullanmaktadır. API'ye erişmek için bir API anahtarına ihtiyacınız olacaktır. API anahtarınız yoksa, önce [buradan](https://home.openweathermap.org/users/sign_up) kayıt olmanız ve bir anahtar almanız gerekiyor.
 
-     API anahtarınızı aldıktan sonra, projenin ana dizinindeki `src` klasöründe `App.js` dosyasını açın. Dosyanın içerisinde
-    const apiKey = "yourapikey"; adındaki değeri göreceksiniz "" başlıkların içerisindeki yourapikey yerine apinizi yapıştırın
+     API anahtarınızı aldıktan sonra .env'in içerisinde api kısmına yapıştırarak api anahtarınızı kullanabilirsiniz
 
 ## Kullanılan API'ler
 
