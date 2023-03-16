@@ -33,9 +33,10 @@ function App() {
         feelsLike: null,
         maxTemp: null,
         minTemp: null,
-        yourapi: 'writeyourapi'
+        yourapi: 'writeyourapi',
+        lang: 'en'
     });
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${weatherData.search}&appid=${weatherData.yourapi === 'writeyourapi' ? process.env.REACT_APP_API_KEY : weatherData.yourapi}&units=metric&lang=tr`;
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${weatherData.search}&appid=${weatherData.yourapi === 'writeyourapi' ? process.env.REACT_APP_API_KEY : weatherData.yourapi}&units=metric&lang=${weatherData.lang}`;
     useEffect(() => {
       fetch(apiUrl)
           .then(response => response.json())
