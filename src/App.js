@@ -1,13 +1,13 @@
 import './App.css';
 import './styles/main.css'
-import {useEffect, useMemo, useRef, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 import macMinimize from './img/macminimize.png'
 import { motion } from "framer-motion";
 import uparrow from './img/Up arrow.png'
 
 
 function App() {
-
+    const yourapi = ''
     const inputref = useRef()
     const barContent = useRef()
     const [weatherData, setWeatherData] = useState({
