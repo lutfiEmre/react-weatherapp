@@ -27,7 +27,7 @@ function App() {
         temp: '',
         citiesPop: '',
         countryCode: 'TR',
-        population: null,
+        population: '84 Million',
         country: null,
         flag: null,
         feelsLike: null,
@@ -143,7 +143,7 @@ function App() {
                     <div className={'country-icon'}>
                         <img src={weatherData.flag} alt=""></img>
                         <h1>{weatherData.country ? weatherData.country : 'Loading'}</h1>
-                        <h3>Nufus: {(weatherData.population / 1000000).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 })} Milyon</h3>
+                        <h3>Nufus: {(weatherData.population / 1000000).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 })} Million</h3>
                     </div>
                 </motion.div>
             </motion.div>
